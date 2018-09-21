@@ -3,7 +3,12 @@ package week2.task1;
 public class Task1 {
 
     public static int gcd(int a, int b) {
-        // TODO: Tính ước chung lớn nhất của 2 số a, b
+        if(a!=0){
+            return gcd(a%b,a);
+        }
+        else{
+            return b;
+        }
         return 0;
     }
 
