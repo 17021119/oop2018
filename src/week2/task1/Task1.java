@@ -1,6 +1,6 @@
 package week2.task1;
 
-public class task1 {
+public class Task1 {
 
     public static int gcd(int a, int b) {
         if(a!=0){
