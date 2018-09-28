@@ -21,9 +21,9 @@ public class task1 {
         else return fibonacci(n-1)+fibonacci(n-2);
     }
 
-    public static void main(String[] args) {
+   /*public static void main(String[] args) {
         System.out.println(gcd(4,6));
         System.out.println(fibonacci(4));
 
-    }
+    }*/
 }
