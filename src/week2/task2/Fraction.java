@@ -80,11 +80,12 @@ public class Fraction {
             System.out.println("Phân số không xác định ^^");
         }
     }
-    public boolean sosanh(Fraction other){
-        if(this.numerator*other.getDenomiator()==this.denomiator*other.getNumerator())
-            return true;
-        return false;
-    }
+    public boolean equals(Object obj){
+		Fraction Pso = new Fraction(0,0);
+		Pso = this.subtract((Fraction)obj);
+		if(Pso.numerator==0) return true;
+		else return false;
+	}
     public static void main(String[] args){
         Fraction a=new Fraction(2,3);
         Fraction b=new Fraction(4,1);
@@ -94,6 +95,6 @@ public class Fraction {
 //        c=a.multiply(b);
 //        c=a.subtract(b);
         c.prin();
-        System.out.println(a.sosanh(b));
+        System.out.println(a.equals(b));
     }
 }
