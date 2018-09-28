@@ -2,7 +2,7 @@ package week2.task3;
 
 
 
-public class Task3 {
+/*public class Task3 {
     public static void main(String[] args){
         Coder a=new Coder();
         a.prinCoder();
@@ -13,7 +13,7 @@ public class Task3 {
         CEO c=new CEO();
         c.prinCEO();
     }
-}
+}*/
 //TODO: khai báo 3 class tương ứng với 3 đối tượng thực tế ở dưới
 class Coder{
     private String name;
