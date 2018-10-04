@@ -86,7 +86,7 @@ public class Fraction {
 		if(Pso.numerator==0) return true;
 		else return false;
 	}
-    /*public static void main(String[] args){
+    public static void main(String[] args){
         Fraction a=new Fraction(2,3);
         Fraction b=new Fraction(4,1);
         Fraction c=new Fraction(-6,3);
@@ -96,5 +96,5 @@ public class Fraction {
 //        c=a.subtract(b);
         c.prin();
         System.out.println(a.equals(b));
-    }*/
+    }
 }
