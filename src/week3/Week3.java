@@ -10,7 +10,7 @@ public class Week3 {
     public static int minOfArray(int[] array) {
         int min=array[0];
         for(int i=1;i<array.length;i++)
-            if (min < array[i]) {
+            if (min > array[i]) {
                 min = array[i];
             }
         return min;
@@ -25,7 +25,7 @@ public class Week3 {
     public static String calculateBMI(double weight, double height) {
         double BMI;
         BMI=weight/(height*height);
-        if(BMI<18.5) return "Thiếu cân";
+        if(BMI<18.5) return "Thiếu Cân";
         else if(BMI>=18.5 && BMI<23) return "Bình Thường";
         else if(BMI>=23 && BMI<25) return "Thừa Cân";
         else return "Béo Phì";
