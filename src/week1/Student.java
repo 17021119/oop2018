@@ -2,87 +2,67 @@ package week1;
 
 public class Student {
 
-    // TODO: khai báo các thuộc tính cho Student
-    private String name;
-    private String id;
-    private String group;
-    private String email;
+    //khai báo các thuộc tính cho Student
+    private String Name;
+    private String ID;
+    private String Group;
+    private String Email;
+    //khai báo các phương thức getter, setter cho Student
 
-    // TODO: khai báo các phương thức getter, setter cho Student
     public String getName() {
-        return name;
+        return Name;
     }
 
-    public void setName(String n) {
-        this.name = n;
+    public void setName(String name) {
+        Name = name;
     }
 
-    public String getId() {
-        return id;
+    public String getID() {
+        return ID;
     }
 
-    public void setId(String n) {
-        this.id = n;
+    public void setID(String ID) {
+        this.ID = ID;
     }
 
     public String getGroup() {
-        return group;
+        return Group;
     }
 
-    public void setGroup(String n) {
-        this.group = n;
+    public void setGroup(String group) {
+        Group = group;
     }
 
     public String getEmail() {
-        return email;
+        return Email;
     }
 
-    public void setEmail(String n) {
-        this.email = n;
+    public void setEmail(String email) {
+        Email = email;
     }
-    /**
-     * Constructor 1
-     */
-
-    Student() {
+    public Student() {
         // TODO:
-        this.name="Studen";
-        this.id="000";
-        this.group="INT22041";
-        this.email="uet@vnu.edu.vn";
+        Name = "Student";
+        ID = "000";
+        Group = "INT22041";
+        Email = "uet@vnu.edu.vn";
+    }
+    public Student(String n, String sid, String em) {
+        // TODO:
+        Name = n;
+        ID = sid;
+        Email = em;
+        Group = "INT22041";
+    }
+    public Student(Student s) {
+        // TODO:
+        Name = s.Name;
+        ID = s.ID;
+        Group = s.Group;
+        Email = s.Email;
     }
 
-    /**
-     * Constructor 2
-     * @param n
-     * @param sid
-     * @param em
-     */
-    Student(String n, String sid, String em) {
-        // TODO:
-        this.name=n;
-        this.id=sid;
-        this.email=em;
-        this.group="INT22041";
-    }
-
-    /**
-     * Constructor 3
-     * @param s
-     */
-    Student(Student s) {
-        // TODO:
-        this.name=s.getName();
-        this.id=s.getId();
-        this.group=s.getGroup();
-        this.email=s.getEmail();
-    }
-
-    String getInfo() {
-        // TODO:
-        System.out.println("Ten      :"+this.getName());
-        System.out.println("Ma so SV :"+this.getId());
-        System.out.println("Lop      :"+this.getGroup());
-        System.out.println("Email    :"+this.getEmail());
+    public String getInfo() {
+        return "Student{" +"Name='" + Name + '\'' +", ID='" + ID + '\'' +", Group='" + Group + '\'' +", Email='" + Email + '\'' +'}';
     }
 }
