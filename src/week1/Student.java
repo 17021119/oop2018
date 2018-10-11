@@ -1,4 +1,4 @@
-package week1;
+/*package week1;
 
 public class Student {
 
@@ -65,4 +65,4 @@ public class Student {
     public String getInfo() {
         return "Student{" +"Name='" + Name + '\'' +", ID='" + ID + '\'' +", Group='" + Group + '\'' +", Email='" + Email + '\'' +'}';
     }
-}
+}*/

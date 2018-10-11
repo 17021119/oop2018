@@ -1,4 +1,4 @@
-package week1;
+/*package week1;
 
 
 
@@ -83,4 +83,4 @@ public class StudentManagement {
         removeStudent("17020000");
         //removeStudent("000");
     }
-}
+}*/
