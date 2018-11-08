@@ -6,6 +6,7 @@ public class Addition extends BinaryExpression{
         this.left=left;
         this.right=right;
     }
+    @Override
     public String toString() {
         return "Addition: left " +left+" right "+right;
     }

@@ -6,7 +6,6 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.File;
-import java.io.FileInputStream;
 
 public class Task2 {
     //@throws NullPointerException ngoại lệ NullPointerException nếu xâu bằng null
@@ -40,7 +39,7 @@ public class Task2 {
     }
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws java.io.IOException {
         Task2 task2=new Task2();
 
         //lỗi NullPointerException
@@ -71,7 +70,7 @@ public class Task2 {
         try {
             task2.getClassCastException();
         }
-        catch (ClassCastException ex){
+        catch (ClassCastException e){
             System.out.println("Lỗi ClassCastException");
         }
 
