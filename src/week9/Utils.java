@@ -51,12 +51,12 @@ public class Utils {
         }
         return null;
     }
-//    public static void main(String[] args) {
-//        File p=findFileByName("C:\\Users\\Tu Nguyen\\IdeaProjects\\oop2018","test.txt");
-//        System.out.println(p);
-//        writeContentToFile("test.txt");
-//        writeContentToFile1("test.txt");
-//        String a=readContentFromFile("test.txt");
-//        System.out.println(a);
-//    }
+    public static void main(String[] args) {
+        File p=findFileByName("C:\\Users\\Tu Nguyen\\IdeaProjects\\oop2018","test.txt");
+        System.out.println(p);
+        writeContentToFile("C:\\Users\\Tu Nguyen\\IdeaProjects\\oop2018\\test.txt");
+        //writeContentToFile1("test.txt");
+        String a=readContentFromFile("test.txt");
+        System.out.println(a);
+    }
 }
